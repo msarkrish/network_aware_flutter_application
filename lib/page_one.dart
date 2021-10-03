@@ -1,5 +1,5 @@
-import 'package:data_connection_checker/data_connection_checker.dart';
 import 'package:flutter/material.dart';
+import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:network_aware_flutter_application/widgets/internet_not_available.dart';
 import 'package:provider/provider.dart';
 
@@ -11,16 +11,18 @@ class Page1 extends StatelessWidget {
         title: Text('Page 1'),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Visibility(
-              visible: Provider.of<DataConnectionStatus>(context) ==
-                  DataConnectionStatus.disconnected,
+              visible: Provider.of<InternetConnectionStatus>(context) ==
+                  InternetConnectionStatus.disconnected,
               child: InternetNotAvailable()),
-          Text(
-            'Page 1',
-            textAlign: TextAlign.center,
+          Expanded(
+            child: Center(
+              child: Text(
+                'Page 1',
+                textAlign: TextAlign.center,
+              ),
+            ),
           ),
         ],
       ),

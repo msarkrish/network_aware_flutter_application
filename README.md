@@ -1,6 +1,6 @@
-# network_aware_flutter_application
+# Network Aware Flutter Application
 
-A new Flutter project.
+Application using Provider and Internet Connection Checker plugin to display message to user whenever Mobile get disconnected from Internet Connection.
 
 ## Getting Started
 

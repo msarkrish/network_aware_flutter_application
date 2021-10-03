@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class InternetNotAvailable extends StatelessWidget {
-  const InternetNotAvailable({Key key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container(
