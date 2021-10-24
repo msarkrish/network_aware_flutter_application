@@ -1,5 +1,7 @@
 # Network Aware Flutter Application
 
+[![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
+
 Application using Provider and Internet Connection Checker plugin to display message to user whenever Mobile get disconnected from Internet Connection.
 
 ## Screenshot
